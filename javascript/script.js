@@ -66,21 +66,17 @@ $(document).scroll(function() {
     $("#ico").css("border-bottom", "2px solid transparent");
     $("#ap").css("border-bottom", "2px solid white");
   } else if (scrollPos >= downloads) {
-    //time pra trocar de cor automaticamente
     $("#down").css("border-bottom", "2px solid white");
     $("#apr").css("border-bottom", "2px solid transparent");
     $("#idv").css("border-bottom", "2px solid transparent");
     $("#ap").css("border-bottom", "2px solid transparent");
-
     $("#ap").css("border-bottom", "2px solid transparent");
   } else {
     $("header").css("background-color", "#a65494");
     $(".btn").css("background-color", "#a65494  ");
     $("h2").css("color", "white  ");
     $(".timeline .li").css("border-color", "white");
-
     $(".point").css("background-color", "white");
-
     $("#apr").css("border-bottom", "2px solid transparent");
     $("#idv").css("border-bottom", "2px solid transparent");
     $("#down").css("border-bottom", "2px solid transparent");
