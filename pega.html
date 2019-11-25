@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Pega! Manual de Marca</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div id="logo">
-          <a href="/pega.html"
-            ><img src="./assets/logo.svg" alt="logo do pega!" id="marca"
-          /></a>
-        </div>
-        <ul>
-          <li><a href="#apresentacao" id="apr">apresentação</a></li>
-          <li><a href="#idvisual" id="idv">identidade visual</a></li>
-          <li><a href="#icons" id="ico">ícones</a></li>
-          <li><a href="#app" id="ap">aplicações</a></li>
-          <li><a href="#downloads" id="down">downloads</a></li>
-        </ul>
-      </nav>
+</head>
 
-      <button class="btn">acesse o pega!</button>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="/pega.html"><img src="./assets/logo.svg" alt="logo do pega!" id="marca" /></a>
+            </div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <ul>
+                <li><a href="#apresentacao" id="apr">. apresentação</a></li>
+                <li><a href="#idvisual" id="idv">. identidade visual</a></li>
+                <li><a href="#icons" id="ico">. ícones</a></li>
+                <li><a href="#app" id="ap">. aplicações</a></li>
+                <li><a href="#downloads" id="down">. downloads</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn">acesse o pega!</button>
     </header>
+    <nav id="menuDD">
+        <ul>
+            <li id='titulo'><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+            <li><a href="#apresentacao" id="apr" />.apresentação</a>
+            </li>
+            <li><a href="#idvisual" id="idv">.identidade visual</a></li>
+            <li><a href="#icons" id="ico">.ícones</a></li>
+            <li><a href="#app" id="ap">.aplicações</a></li>
+            <li><a href="#downloads" id="down">.downloads</a></li>
+        </ul>
+    </nav>
+
+
 
     <main>
-      <!--
+        <!--
       <aside class="timeline">
         <div class="ul">
           <div class="li point 1"></div>
@@ -45,461 +59,408 @@
         </div>
       </aside>
       -->
-      <div class="slide">
-        <img src="./assets/slide/1.png" alt="foto modelo weydla" class="mySlide" />
-        <img src="./assets/slide/2.png" alt="foto modelo Heron" class="mySlide" />
-        <img src="./assets/slide/3.png" alt="foto modelo Shelida" class="mySlide" />
-      </div>
-      <div id="row">
-        <div class="conceito">
-          <h1>Conectando pessoas, <br />compartilhando <br />estilos.</h1>
-          <button class="btn">manual de marca</button>
+        <div class="slide">
+            <img src="./assets/slide/1.png" alt="foto modelo weydla" class="mySlide" />
+            <img src="./assets/slide/2.png" alt="foto modelo Heron" class="mySlide" />
+            <img src="./assets/slide/3.png" alt="foto modelo Shelida" class="mySlide" />
         </div>
-        <div class="footer">
-          <p>
-            UNIVERSIDADE FEDERAL DO CEARÁ, CAMPUS QUIXADÁ / DESIGN DIGITAL
-            2019.2
-          </p>
-          <p>
-            . direção de arte: Prof Paulo Victor <br />. projeto integrado II:
-            Profa. Tânia Pinheiro
-          </p>
-          <p>
-            . equipe: Antonio Kainan; David Castro; Fernanda Gadelha; Michelle
-            Romão; Yan Vancelis
-          </p>
-        </div>
-      </div>
-      <section id="apresentacao">
-        <h2>. conceito de criação</h2>
-        <div class="rowarticle">
-          <article class="title">
-            CONECTANDO PESSOAS, <br />COMPARTILHANDO ESTILOS
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>. a expressão "pega" pega!</h2>
-        <div class="rowarticle">
-          <article class="text">
-            PEGA!” nasceu de um desejo<br />
-            de mudar. Mudar a <br />
-            forma de consumir <br />
-            moda, de compartilhar <br />
-            experiências e fazer a <br />
-            diferença para o planeta. <br />
-            O nome“Pega!”, irreverente e <br />
-            descontraído, carrega a <br />
-            noção de troca, contato, <br />
-            ação e reação. <br />
-          </article>
-          <article class="text">
-            No Ceará, a expressão<br />
-            significa entregar algo<br />
-            oferecer algo, reforçando<br />
-            a ideia de conexão entre<br />
-            pessoas. Neste manual,<br />
-            será apresentada a <br />
-            composição visual da<br />
-            marca, incluindo<br />
-            tipografia, fotografia,<br />
-            cores e aplicações.<br />
-          </article>
-        </div>
-      </section>
-
-      <section id="idvisual">
-        <h2>. valores</h2>
-        <div class="rowarticle">
-          <article class="title">
-            Sustentável,<br />Prática,<br />Econômica.
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>. processo de criação</h2>
-        <div class="rowarticle">
-          <article class="title">
-            <img src="./assets/evolucao.png" alt="evolução da marca" width="66.2%" />
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>. grid e área de proteção</h2>
-        <div class="rowarticle">
-          <article class="title">
-            <img src="./assets/grid.png" alt="grid da marca" width="66.2%" />
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>. assinaturas</h2>
-        <div class="rowarticle">
-          <article class="title">
-            <img src="./assets/assinaturas.png" width="66.2%" alt="assinaturas do pega!"/>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>. aplicações em cores</h2>
-        <div class="rowarticle">
-          <article class="grid">
-            <div class=" contentgrid azul">
-              <img src="./assets/logo.svg" alt="logo branca" width="100px" />
-            </div>
-            <div class=" contentgrid vermelho">
-              <img src="./assets/logo.svg" alt="logo branca" width="100px" />
-            </div>
-            <div class=" contentgrid lilas">
-              <img src="./assets/logo.svg" alt="logo branca" width="100px" />
-            </div>
-            <div class="contentgrid amarelo">
-              <img src="./assets/logoazul.svg" alt="logo azul" width="100px" />
-            </div>
-            <div class="contentgrid preto">
-              <img src="./assets/logo.svg" alt="logo branca" width="100px" />
-            </div>
-            <div class="contentgrid bpreto">
-              <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
-            </div>
-            <div class="contentgrid bazul">
-              <img src="./assets/logoazul.svg" alt="logo azul" width="100px" />
-            </div>
-            <div class="contentgrid bvermelho">
-              <img src="./assets/logovermelha.png" alt="logo vermelha" width="100px" />
-            </div>
-            <div class="contentgrid blilas">
-              <img src="./assets/logolilas.png" alt="logo lilás" width="100px" />
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>. variações cromáticas</h2>
-        <div class="rowarticle">
-          <article class="grid2">
-            <div class="contentgrid bpreto">
-              <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
+        <div id="row">
+            <div class="conceito">
+                <h1>Conectando pessoas, <br />compartilhando <br />estilos.</h1>
+                <button class="btn">manual de marca</button>
             </div>
 
-            <div class="contentgrid v10">
-              <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
-              <br />
-              <p>10%</p>
+        </div>
+        <section id="apresentacao">
+            <h2>. conceito de criação</h2>
+            <div class="rowarticle">
+                <article class="title">
+                    CONECTANDO PESSOAS, COMPARTILHANDO ESTILOS
+                </article>
             </div>
-            <div class="contentgrid v20">
-              <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
-              <br />
-              <p>20%</p>
+        </section>
+
+        <section id="pega">
+            <h2>. a expressão "pega" pega!</h2>
+            <div class="rowarticle">
+                <article class="text">
+                    PEGA!” nasceu de um desejo<br /> de mudar. Mudar a <br /> forma de consumir <br /> moda, de compartilhar <br /> experiências e fazer a <br /> diferença para o planeta. <br /> O nome“Pega!”, irreverente e <br /> descontraído, carrega
+                    a <br /> noção de troca, contato, <br /> ação e reação. <br />
+                </article>
+                <article class="text">
+                    No Ceará, a expressão<br /> significa entregar algo<br /> oferecer algo, reforçando<br /> a ideia de conexão entre<br /> pessoas. Neste manual,<br /> será apresentada a <br /> composição visual da<br /> marca, incluindo<br /> tipografia,
+                    fotografia,
+                    <br /> cores e aplicações.<br />
+                </article>
             </div>
-            <div class="contentgrid v30">
-              <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
-              <br />
-              <p>30%</p>
+        </section>
+
+        <section id="idvisual">
+            <h2>. valores</h2>
+            <div class="rowarticle">
+                <article class="title">
+                    Sustentável,<br />Prático,<br />Econômico.
+                </article>
             </div>
-            <div class="contentgrid v40">
-              <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
-              <br />
-              <p>40%</p>
+        </section>
+
+        <section>
+            <h2>. processo de criação</h2>
+            <div class="rowarticle">
+                <article class="title">
+                    <img src="./assets/evolucao.png" alt="evolução da marca" width="66.2%" />
+                </article>
             </div>
-            <div class="contentgrid v50">
-              <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
-              <br />
-              <p>50%</p>
+        </section>
+
+        <section>
+            <h2>. grid e área de proteção</h2>
+            <div class="rowarticle">
+                <article class="title">
+                    <img src="./assets/grid.png" alt="grid da marca" width="66.2%" />
+                </article>
             </div>
-            <div class="contentgrid v60">
-              <img src="./assets/logo.svg" alt="logo branca" width="100px" />
-              <br />
-              <p>60%</p>
+        </section>
+
+        <section>
+            <h2>. assinaturas</h2>
+            <div class="rowarticle">
+                <article class="title">
+                    <img src="./assets/assinaturas.png" width="66.2%" alt="assinaturas do pega!" />
+                </article>
             </div>
-            <div class="contentgrid v70">
-              <img src="./assets/logo.svg" alt="logo branca" width="100px" />
-              <br />
-              <p>70%</p>
+        </section>
+
+        <section>
+            <h2>. aplicações em cores</h2>
+            <div class="rowarticle">
+                <article class="grid">
+                    <div class=" contentgrid azul">
+                        <img src="./assets/logo.svg" alt="logo branca" width="100px" />
+                    </div>
+                    <div class=" contentgrid vermelho">
+                        <img src="./assets/logo.svg" alt="logo branca" width="100px" />
+                    </div>
+                    <div class=" contentgrid lilas">
+                        <img src="./assets/logo.svg" alt="logo branca" width="100px" />
+                    </div>
+                    <div class="contentgrid amarelo">
+                        <img src="./assets/logoazul.svg" alt="logo azul" width="100px" />
+                    </div>
+                    <div class="contentgrid preto">
+                        <img src="./assets/logo.svg" alt="logo branca" width="100px" />
+                    </div>
+                    <div class="contentgrid bpreto">
+                        <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
+                    </div>
+                    <div class="contentgrid bazul">
+                        <img src="./assets/logoazul.svg" alt="logo azul" width="100px" />
+                    </div>
+                    <div class="contentgrid bvermelho">
+                        <img src="./assets/logovermelha.png" alt="logo vermelha" width="100px" />
+                    </div>
+                    <div class="contentgrid blilas">
+                        <img src="./assets/logolilas.png" alt="logo lilás" width="100px" />
+                    </div>
+                </article>
             </div>
-            <div class="contentgrid v80">
-              <img src="./assets/logo.svg" alt="logo branca" width="100px" />
-              <br />
-              <p>80%</p>
+        </section>
+
+        <section>
+            <h2>. variações cromáticas</h2>
+            <div class="rowarticle">
+                <article class="grid2">
+                    <div class="contentgrid bpreto">
+                        <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
+                    </div>
+
+                    <div class="contentgrid v10">
+                        <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
+                        <br />
+                        <p>10%</p>
+                    </div>
+                    <div class="contentgrid v20">
+                        <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
+                        <br />
+                        <p>20%</p>
+                    </div>
+                    <div class="contentgrid v30">
+                        <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
+                        <br />
+                        <p>30%</p>
+                    </div>
+                    <div class="contentgrid v40">
+                        <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
+                        <br />
+                        <p>40%</p>
+                    </div>
+                    <div class="contentgrid v50">
+                        <img src="./assets/logopreta.svg" alt="logo preta" width="100px" />
+                        <br />
+                        <p>50%</p>
+                    </div>
+                    <div class="contentgrid v60">
+                        <img src="./assets/logo.svg" alt="logo branca" width="100px" />
+                        <br />
+                        <p>60%</p>
+                    </div>
+                    <div class="contentgrid v70">
+                        <img src="./assets/logo.svg" alt="logo branca" width="100px" />
+                        <br />
+                        <p>70%</p>
+                    </div>
+                    <div class="contentgrid v80">
+                        <img src="./assets/logo.svg" alt="logo branca" width="100px" />
+                        <br />
+                        <p>80%</p>
+                    </div>
+                    <div class="contentgrid v90">
+                        <img src="./assets/logo.svg" alt="logo branca" width="100px" />
+                        <br />
+                        <p>90%</p>
+                    </div>
+                    <div class="contentgrid v100">
+                        <img src="./assets/logo.svg" alt="logo branca" width="100px" />
+                        <br />
+                        <p>100%</p>
+                    </div>
+                </article>
             </div>
-            <div class="contentgrid v90">
-              <img src="./assets/logo.svg" alt="logo branca" width="100px" />
-              <br />
-              <p>90%</p>
+        </section>
+
+        <section>
+            <h2>. aí não, carx!</h2>
+            <div class="rowarticle">
+                <article class="title">
+                    <img src="./assets/erros.png" alt="usos errados com a marca" width="66.2%" />
+                </article>
             </div>
-            <div class="contentgrid v100">
-              <img src="./assets/logo.svg" alt="logo branca" width="100px" />
-              <br />
-              <p>100%</p>
+        </section>
+
+        <section>
+            <h2>. exceção da regra</h2>
+            <div class="rowarticle">
+                <article class="text">
+                    <img src="./assets/fotos/g3642.png" alt="exceção da regra para a aplicações com a marca" width="62%" />
+                </article>
+                <article class="text">
+                    Isso mesmo!<br /> Você pode cortar<br /> nossa marca em <br /> aplicações com<br /> imagens e peças <br /> gráficas, mas não <br /> vai passar dos <br /> limites, ein? <br /> Veja as regras <br /> ao lado.
+                    << </article>
             </div>
-          </article>
-        </div>
-      </section>
+        </section>
 
-      <section>
-        <h2>. aí não, carx!</h2>
-        <div class="rowarticle">
-          <article class="title">
-            <img src="./assets/erros.png" alt="usos errados com a marca" width="66.2%"/>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>. exceção da regra</h2>
-        <div class="rowarticle">
-          <article class="text">
-            <img src="./assets/fotos/g3642.png" alt="exceção da regra para a aplicações com a marca" width="62%" />
-          </article>
-          <article class="text">
-            Isso mesmo!<br />
-            Você pode cortar<br />
-            nossa marca em <br />
-            aplicações com<br />
-            imagens e peças <br />
-            gráficas, mas não <br />
-            vai passar dos <br />
-            limites, ein? <br />
-            Veja as regras <br />
-            ao lado. <<
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>. tipografia</h2>
-        <div class="rowarticle">
-          <article class="text">
-            <img src="./assets/Ativo 1.png" alt="tipografia Gilroy" />
-          </article>
-          <article class="text">
-            Nossa tipografia possui <br />
-            estrutura simples e sem serifa,<br />
-            buscando criar contraste em<br />
-            relação a marca, que é <br />
-            composta por um tipo. <br />
-            Gilroy é uma família de <br />
-            fontes completa e<br />
-            versátil.<br />
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>. como usamos</h2>
-        <div class="rowarticle">
-          <article class="text">
-            <img src="./assets/Ativo 2.png" alt="como usamos aplicando em materiais" />
-          </article>
-          <article class="text"></article>
-        </div>
-      </section>
-
-      <section class="cores1">
-        <h2>. cores</h2>
-        <div class="rowarticle">
-          <article class="text">
-            As cores escolhidas<br />
-            par o "Pega!" são<br />
-            duas cores frias e<br />
-            duas cores <br />
-            quentes, com a<br />
-            intenção de <br />
-            passar energia e<br />
-            eletricidade para <br />
-            quem olha e entra<br />
-            em contato.
-          </article>
-          <article class="text"></article>
-        </div>
-      </section>
-
-      <section id="cores2">
-        <div class="vermelho" id="vermelho">
-          <p>P 55-6 C</p>
-          <p>r234 g82 b84</p>
-          <p>c0 m65 y64 k8</p>
-          <p>hex #EA5254</p>
-        </div>
-        <div class="amarelo" id="amarelo">
-          <p>P 166-7 C</p>
-          <p>r234 g224 b67</p>
-          <p>c9 m0 y86 k0</p>
-          <p>hex #EAE043</p>
-        </div>
-        <div class="azul" id="azul">
-          <p>P 109-13 C</p>
-          <p>r40 g141 b200</p>
-          <p>c74 m26 y0 k0</p>
-          <p>hex #288DC8</p>
-        </div>
-        <div class="lilas" id="lilas">
-          <p>P 83-6 C</p>
-          <p>r178 g80 b147</p>
-          <p>c0 m55 y19 k25</p>
-          <p>hex #BE5599</p>
-        </div>
-      </section>
-
-      <section id="icons">
-        <h2>. ícones</h2>
-        <div class="rowarticle">
-          <article class="text">
-            Nossos ícones foram<br />
-            pensados para comunicar<br />
-            de maneira rápida e<br />
-            eficiente. Os ícones têm como<br />
-            característica principal o<br />
-            minimalismo da forma, sem <br />
-            abandonar a descontração<br />
-            da marca.
-          </article>
-          <article class="text">
-            <img src="./assets/icones.png" alt="icones do Pega!" />
-          </article>
-        </div>
-      </section>
-
-      <section id="app">
-        <h2>. fotos</h2>
-        <div class="rowarticle">
-          <article class="text fotos">
-            Nossos ícones foram<br />
-            pensados para comunicar<br />
-            de maneira rápida e<br />
-            eficiente. Os ícones têm como<br />
-            característica principal o<br />
-            minimalismo da forma, sem <br />
-            abandonar a descontração<br />
-            da marca.
-          </article>
-          <article class="title">
-            <img
-              src="./assets/fotos/b2a07e49-23e1-4372-a032-a66a6b1de54b.jpg"
-              alt="foto modelo Alice para o Pega! foto com fundo da cor lilas, modelo no centro, cabelo cacheado, roupa branca florida, exclamações do padrão do Pega! no lado esquerdo da foto"
-              width="62%"
-            />
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <div class="rowarticle">
-          <article class="text">
-            <div class="gridphoto">
-              <img src="./assets/fotos/3.png" alt="foto modelo Heron para o Pega!, foto com fundo da cor vermelha, modelo com roupa vermelha quadriculada e boné vermelho com branco. Ele está abotoando o último botão da sua blusa, olhando para a câmera." />
-              <img src="./assets/fotos/1.png" alt="foto modelo Weydla para o Pega!, foto com fundo lilás, ela está com roupa rosa, possui cabelo cacheado e sorri para a câmera." />
-              <img src="./assets/fotos/photo5012679743484569629.jpg" alt="foto modelo Layla para o Pega!, fundo da cor amarela, ela está com uma blusa azul com mangas brancas compridas. Ela sorri para a câmera." />
-
-              <img src="./assets/fotos/photo5053048901308885068.jpg" alt=" foto modelo Ananda para o Pega!, fundo da cor lilás, ela está com uma blusa cropped branca, olhando para a câmera, seus cabelos são pretos, com a frente colorida de laranja e lilás nas pontas." />
-              <img src="./assets/fotos/2.png" alt="foto modelo Shelida para o Pega!, fundo da cor amarela, ela está com blusa azul colorida de botãos e mandas compridas dobradas. Sorri para a câmera." />
-
-              <img src="./assets/fotos/photo5053048901308885069.jpg" alt="foto modelo Weydla para o Pega!, com o fundo da cor lilás, ela segura o pacote que tem o padrão do Pega! da cor amarela." />
+        <section>
+            <h2>. tipografia</h2>
+            <div class="rowarticle">
+                <article class="text">
+                    <img src="./assets/Ativo 1.png" alt="tipografia Gilroy" />
+                </article>
+                <article class="text">
+                    Nossa tipografia possui <br /> estrutura simples e sem serifa,<br /> buscando criar contraste em<br /> relação a marca, que é <br /> composta por um tipo. <br /> Gilroy é uma família de <br /> fontes completa e<br /> versátil.
+                    <br />
+                </article>
             </div>
-          </article>
-        </div>
-      </section>
+        </section>
 
-      <section>
-        <h2>. aplicações</h2>
-        <div class="rowarticle">
-          <article class="title">
-            <img
-              src="./assets/aplicacoes transparente.png"
-              alt="aplicações (embalagens, envelope, agenda, assinatura de e-mail, papel timbrado e cartões de visitas)"
-              width="405px"
-            />
-          </article>
-        </div>
-      </section>
+        <section>
+            <h2>. como usamos</h2>
+            <div class="rowarticle">
+                <article class="text">
+                    <img src="./assets/Ativo 2.png" alt="como usamos aplicando em materiais" />
+                </article>
+                <article class="text"></article>
+            </div>
+        </section>
 
-      <section>
-        <h2>. pattern</h2>
-        <div class="rowarticle">
-          <article class="text">
-            <img src="./assets/pattern pega.png" alt="padrão (pattern) do Pega!, que é composto pelas exclamações." width="292px" />
-          </article>
-        </div>
-      </section>
+        <section class="cores1">
+            <h2>. cores</h2>
+            <div class="rowarticle" style="justify-content: center;">
+                <article class="text">
+                    As cores escolhidas para o "Pega!" são<br /> duas cores frias e duas cores quentes,<br> com a intenção de passar energia e<br /> eletricidade para quem olha e entra<br /> em contato.
+                </article>
+                <article class="text"></article>
+            </div>
+        </section>
 
-      <section>
-        <h2>. material de divulgação (digital)</h2>
-        <div class="rowarticle">
-          <article class="text" style="flex-flow: column wrap">
-            <video width="60%" controls>
+        <section id="cores2">
+            <div class="vermelho" id="vermelho">
+                <p>P 55-6 C</p>
+                <p>r234 g82 b84</p>
+                <p>c0 m65 y64 k8</p>
+                <p>hex #EA5254</p>
+            </div>
+            <div class="amarelo" id="amarelo">
+                <p>P 166-7 C</p>
+                <p>r234 g224 b67</p>
+                <p>c9 m0 y86 k0</p>
+                <p>hex #EAE043</p>
+            </div>
+            <div class="azul" id="azul">
+                <p>P 109-13 C</p>
+                <p>r40 g141 b200</p>
+                <p>c74 m26 y0 k0</p>
+                <p>hex #288DC8</p>
+            </div>
+            <div class="lilas" id="lilas">
+                <p>P 83-6 C</p>
+                <p>r178 g80 b147</p>
+                <p>c0 m55 y19 k25</p>
+                <p>hex #BE5599</p>
+            </div>
+        </section>
+
+        <section id="icons" style="justify-content: center;">
+            <h2>. ícones</h2>
+            <div class="rowarticle">
+                <article class="text">
+                    Nossos ícones foram pensados para comunicar de maneira rápida e eficiente. Os ícones têm como característica principal o minimalismo da forma, sem abandonar a descontração da marca.
+                </article>
+                <article class="text">
+                    <img src="./assets/icones.png" alt="icones do Pega!" />
+                </article>
+            </div>
+        </section>
+
+        <section id="app">
+            <h2>. fotos</h2>
+            <div class="rowarticle">
+                <article class="text fotos">
+                    Nossas fotos para materiais <br>publicitários são realizadas<br> em estúdio para que possamos<br> ter um controle maior da luz. <br>As fotos são sempre feitas <br>com fundo colorido e mostram <br>nossos modelos em primeiro plano .
+                </article>
+                <article class="title">
+                    <img src="./assets/fotos/b2a07e49-23e1-4372-a032-a66a6b1de54b.jpg" alt="foto modelo Alice para o Pega! foto com fundo da cor lilas, modelo no centro, cabelo cacheado, roupa branca florida, exclamações do padrão do Pega! no lado esquerdo da foto" width="62%"
+                    />
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <div class="rowarticle">
+                <article class="text">
+                    <div class="gridphoto">
+                        <img src="./assets/fotos/3.png" alt="foto modelo Heron para o Pega!, foto com fundo da cor vermelha, modelo com roupa vermelha quadriculada e boné vermelho com branco. Ele está abotoando o último botão da sua blusa, olhando para a câmera." />
+                        <img src="./assets/fotos/1.png" alt="foto modelo Weydla para o Pega!, foto com fundo lilás, ela está com roupa rosa, possui cabelo cacheado e sorri para a câmera." />
+                        <img src="./assets/fotos/photo5012679743484569629.jpg" alt="foto modelo Layla para o Pega!, fundo da cor amarela, ela está com uma blusa azul com mangas brancas compridas. Ela sorri para a câmera." />
+
+                        <img src="./assets/fotos/photo5053048901308885068.jpg" alt=" foto modelo Ananda para o Pega!, fundo da cor lilás, ela está com uma blusa cropped branca, olhando para a câmera, seus cabelos são pretos, com a frente colorida de laranja e lilás nas pontas."
+                        />
+                        <img src="./assets/fotos/2.png" alt="foto modelo Shelida para o Pega!, fundo da cor amarela, ela está com blusa azul colorida de botãos e mandas compridas dobradas. Sorri para a câmera." />
+
+                        <img src="./assets/fotos/photo5053048901308885069.jpg" alt="foto modelo Weydla para o Pega!, com o fundo da cor lilás, ela segura o pacote que tem o padrão do Pega! da cor amarela." />
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>. aplicações</h2>
+            <div class="rowarticle">
+                <article class="title">
+                    <img src="./assets/aplicacoes transparente.png" alt="aplicações (embalagens, envelope, agenda, assinatura de e-mail, papel timbrado e cartões de visitas)" width="405px" />
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>. pattern</h2>
+            <div class="rowarticle">
+                <article class="text">
+                    <img src="./assets/pattern pega.png" alt="padrão (pattern) do Pega!, que é composto pelas exclamações." width="292px" />
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>. material de divulgação (digital)</h2>
+            <div class="rowarticle">
+                <article class="text" style="flex-flow: column wrap">
+                    <video width="60%" controls>
               <source src="./assets/videos/conceitual.mp4" type="video/mp4">
                 seu navegador não suporta a tag video
             </video>
-            <p ><br>
-            vídeo conceitual</p>
-          </article>
-          <article class="text" style="flex-flow: column wrap">
-            <audio controls="controls" >
+                    <p><br> vídeo conceitual</p>
+                </article>
+                <article class="text" style="flex-flow: column wrap">
+                    <audio controls="controls">
               <source src="assets/audio/propaganda.mp3" type="audio/mp3" />
               seu navegador não suporta a tag audio
               </audio>
-              <p><br>propaganda stream de música/podcast</p>
-          </article>
-        </div>
-      </section>
-      <section>
-        <h2>. animação (logo reveal)</h2>
-        <div class="rowarticle">
-          <article class="title">
-            <video  controls width="50%">
+                    <p><br>propaganda stream de música/podcast</p>
+                </article>
+            </div>
+        </section>
+        <section>
+            <h2>. animação (logo reveal)</h2>
+            <div class="rowarticle">
+                <article class="title">
+                    <video width="50%" controls>
               <source src="./assets/videos/reveal.mp4" type="video/mp4">
                 seu navegador não suporta a tag video
               </video>
-          </article>
-        </div>
-      </section>
-      <section>
-        <h2>. redes sociais</h2>
-        <article class="redessociais">
+                </article>
+            </div>
+        </section>
+        <section>
+            <h2>. redes sociais</h2>
+            <article class="redessociais">
 
-          <a href="http://instagram.com/pegaoficial">  <img src="./assets/instagram.png" alt="instagram"></a>
-          <a href="http://twitter.com/pegaofficial">  <img src="./assets/twitter.png" alt="twitter"></a>
-          <a href="http://facebook.com/pegaof1cial">  <img src="./assets/facebook.png" alt="facebook"></a>
-        </article>
-        </div>
-      </section>
+                <a href="http://instagram.com/pegaoficial"> <img src="./assets/instagram.png" alt="instagram"></a>
+                <a href="http://twitter.com/pegaofficial"> <img src="./assets/twitter.png" alt="twitter"></a>
+                <a href="http://facebook.com/pegaof1cial"> <img src="./assets/facebook.png" alt="facebook"></a>
+            </article>
+            </div>
+        </section>
 
-      <section>
-        <h2>. material de divulgação impresso</h2>
-        <div class="rowarticle">
-          <article class="text">
-           <img src="./assets/fotos/photo5059859761662634040.jpg" alt="cartaz com a modelo Ananda, onde a logo está localizada no centro inferior do cartaz, a modelo aparece sorrindo sobrepondo um fundo azul, onde em volta tem outro fundo lilás. Aparece as seguintes informações, na lateral esquerda: compartilhe estilos; na lateral direita: 27 NOV 9H00 SALA 5 BLOCO 4" width="25%">
-          </article>
-        </div>
-      </section>
+        <section>
+            <h2>. material de divulgação impresso</h2>
+            <div class="rowarticle">
+                <article class="text">
+                    <img src="./assets/fotos/photo5059859761662634040.jpg" alt="cartaz com a modelo Ananda, onde a logo está localizada no centro inferior do cartaz, a modelo aparece sorrindo sobrepondo um fundo azul, onde em volta tem outro fundo lilás. Aparece as seguintes informações, na lateral esquerda: compartilhe estilos; na lateral direita: 27 NOV 9H00 SALA 5 BLOCO 4"
+                        width="25%">
+                </article>
+            </div>
+        </section>
 
-      <section id="downloads">
-        <h2>. downloads</h2>
-        <div class="rowarticle">
-          <article class="title">
-           <a href="" download="w3logo"> <button class="btn">manual de marca pdf</button></a>
-           <a href="./downloads/icones.rar" download="icones.rar"> <button class="btn">ícones</button></a>
-           <a href="./downloads/pattern.rar" download="pattern.rar"> <button class="btn">pattern</button></a>
-            <a href="./downloads/fotos.rar" download="fotos.rar"><button class="btn">fotos</button></a>
-            <a href="./downloads/materialdd.rar" download="material.rar"> <button class="btn">material de divulgação</button></a>
-            <a href="./downloads/animacao.rar" download="animacao.rar"> <button class="btn">animação</button></a>
-            <a href="./downloads/logo.rar" download="logo.rar"> <button class="btn">logo</button></a>
-          </article>
-        </div>
-      </section>
+        <section id="downloads">
+            <h2>. downloads</h2>
+            <div class="rowarticle">
+                <article class="title">
+                    <a href="./downloads/Manual de Marca.pdf" download="Manual de Marca.pdf"> <button class="btn">manual de marca(pdf)</button></a>
+                    <a href="./downloads/icones.rar" download="icones.rar"> <button class="btn">ícones</button></a>
+                    <a href="./downloads/pattern.rar" download="pattern.rar"> <button class="btn">pattern</button></a>
+                    <a href="./downloads/fotos.rar" download="fotos.rar"><button class="btn">fotos</button></a>
+                    <a href="./downloads/materialdd.rar" download="material.rar"> <button class="btn">material de divulgação</button></a>
+                    <a href="./downloads/animacao.rar" download="animacao.rar"> <button class="btn">animação</button></a>
+                    <a href="./downloads/logo.rar" download="logo.rar"> <button class="btn">logo</button></a>
+                </article>
+            </div>
+        </section>
+        <footer>
+            <img <img src="./assets/logo.svg">
+            <p>
+                UNIVERSIDADE FEDERAL DO CEARÁ, CAMPUS QUIXADÁ <br> <br> DESIGN DIGITAL 2019.2
+            </p>
+            <br>
+            <p> <br>. equipe : <br> <br>Antonio Kainan; <br>David Castro; <br>Fernanda Gadelha; <br>Michelle Romão; <br>Yan Vancelis;
+            </p>
+        </footer>
     </main>
 
+    <script>
+        function openNav() {
+            document.getElementById("menuDD").style.display = "flex";
+        }
+
+        function closeNav() {
+            document.getElementById("menuDD").style.display = "none";
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./javascript/slide.js"></script>
 
     <script src="./javascript/script.js"></script>
-  </body>
+</body>
+
 </html>
